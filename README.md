@@ -48,6 +48,19 @@ Welcome to the project repository! Below is a detailed explanation of the folder
 
 ---
 
+### 4. **wisun-br-linux-main**
+   - **Description:**
+     This folder contains the Wi-SUN Linux Border Router project, which implements the [Wi-SUN protocol](https://wi-sun.org/) on Linux devices. It allows Linux hosts to act as Border Routers for Wi-SUN networks.
+   - **Purpose:**
+     - Run the `wsbrd` daemon to manage the high-level layers of the Wi-SUN protocol.
+     - Enable communication with RCP (Radio Co-Processor) devices over serial connections (e.g., UART).
+   - **Quick Start:**
+     - The project requires dependencies like `mbedTLS`, `libnl-3`, and `libnl-route-3` for compilation.
+     - Refer to the folder’s dedicated [README.md](wisun-br-linux-main/README.md) for detailed instructions on setup, compilation, and usage.
+   - **Technology Stack:** C, Linux, mbedTLS, libnl.
+
+---
+
 ## How to Get Started
 1. **Arduino-App:**
    - Open the project in Android Studio.
@@ -63,13 +76,16 @@ Welcome to the project repository! Below is a detailed explanation of the folder
    - Install dependencies using `npm install`.
    - Run the dashboard locally using `npm start`.
 
+4. **wisun-br-linux-main:**
+   - Follow the instructions in the folder’s `README.md` to set up and run the Wi-SUN Border Router.
+
 ---
 
 ## Contribution Guidelines
 - Follow the established coding conventions for each component.
 - Submit pull requests with clear and detailed descriptions of changes.
 - Test your code thoroughly before submission.
-
+  
 ---
 
 ## Contact

@@ -1,0 +1,17 @@
+# SPDX-License-Identifier: GPL-2.0 or Apache-2.0
+[Unit]
+Description=Wi-SUN Border Router Service
+Documentation=file:///usr/local/share/doc/wsbrd/examples/wsbrd.conf
+After=network.target
+After=freeradius.service
+# If you rely on an external DHCP server, don't forget to add a dependency here
+
+[Service]
+BusName=com.silabs.Wisun.BorderRouter
+ExecStart=/usr/local/bin/wsbrd -F /etc/wsbrd.conf
+Restart=on-failure
+# Files created by wsbrd contain secrets, so remove read permissions
+UMask=0066
+
+[Install]
+WantedBy=multi-user.target

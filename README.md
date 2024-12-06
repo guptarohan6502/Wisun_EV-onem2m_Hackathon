@@ -30,10 +30,11 @@ Welcome to the project repository! Below is a detailed explanation of the folder
    #### b. **Main_UI**
    - **Description:**
      This subdirectory contains the codebase for the main user interface (UI) embedded within the EV charger. It handles user interactions and manages communication with other internal components of the charger.
+     This code needs to be uploaded on raspberry pi of the charger and just run `python run.py`
    - **Purpose:**
      - Provide a physical user interface for charger controls.
      - Handle core logic for the charger operation, including device control and communication.
-   - **Technology Stack:** Embedded programming.
+   - **Technology Stack:** Pyhon.
 
 ---
 
